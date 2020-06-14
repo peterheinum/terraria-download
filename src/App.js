@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import logo from "./logo.svg"
+import "./App.css"
 
-function App() {
+const App = () => {
+  const downloadFile = () => {
+    window.location.replace('https://github.com/peterheinum/terraria-syncv2/blob/master/Sad_Shore_of_Werewolves.wld?raw=true')
+    setTimeout(() => {
+      window.location.replace('https://github.com/peterheinum/terraria-syncv2/blob/master/Sad_Shore_of_Werewolves.wld.bak?raw=true')
+    }, 5000)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo}  className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <button onClick={downloadFile}>Download</button>
+        <br />
+        Download these two files and put them in your "worlds" folder for terraria, then set sail :) 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
