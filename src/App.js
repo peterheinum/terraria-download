@@ -7,6 +7,9 @@ const App = () => {
     window.location.replace('https://github.com/peterheinum/terraria-syncv2/blob/master/Sad_Shore_of_Werewolves.wld?raw=true')
     setTimeout(() => {
       window.location.replace('https://github.com/peterheinum/terraria-syncv2/blob/master/Sad_Shore_of_Werewolves.wld.bak?raw=true')
+      setTimeout(() => {
+        window.location.replace('https://github.com/peterheinum/terraria-syncv2/blob/master/Sad_Shore_of_Werewolves.wld.bak2?raw=true')
+      }, 5000)
     }, 5000)
   }
 
